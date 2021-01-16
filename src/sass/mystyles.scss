@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import "../../node_modules/bulma/bulma.sass";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// Colors brand
+$blue: #1B0E81;
+$pink: #FA5A59;
+// Update Bulma's global variables
+$primary: $blue;
+$button-colors: mergeColorMaps(("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert, $primary-light, $primary-dark), "link": ($link, $link-invert, $link-light, $link-dark), "info": ($info, $info-invert, $info-light, $info-dark), "success": ($success, $success-invert, $success-light, $success-dark), "warning": ($warning, $warning-invert, $warning-light, $warning-dark), "danger": ($pink, $danger-invert, $danger-light, $danger-dark)), $custom-colors);
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1.my-6 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h1.heading{
+  font-size: 25px;
+  color: $blue !important;
+  span {
+    font-weight: bold;
+  }
+}
+
