@@ -11,7 +11,7 @@ function Header() {
               <div className="level-item has-text-left">
                 <div>
                   <h1 className="heading has-text-primary is-lowercase"><span>Facilitamos el<br/>desarrollo continuo<br/>profesional<br/></span>a través de expertos<br/>locales.</h1>
-                  <a className="button is-rounded is-danger">Comienza ahora</a>
+                  <a className="button is-rounded is-danger mt-3">Comienza ahora</a>
                 </div>
               </div>
               <div className="level-item has-text-centered">
