@@ -6,7 +6,7 @@ function Header() {
     <React.Fragment>
       <section className="hero is-fullheight">
         <div className="hero-body">
-          <div className="container">
+          <div className="container is-fluid">
             <div className="level">
               <div className="level-item has-text-left">
                 <div>

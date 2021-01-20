@@ -7715,3 +7715,25 @@ h1.heading {
   color: #1B0E81 !important; }
   h1.heading span {
     font-weight: bold; }
+
+.event__image {
+  border-radius: 20px !important; }
+
+h1.event__name {
+  color: #1B0E81 !important;
+  font-weight: bold; }
+
+.event__info {
+  color: #468DDE; }
+
+.event__dates {
+  color: #FA5A59;
+  font-weight: bold; }
+
+.event__image__banner {
+  height: 250px !important;
+  width: 250px !important; }
+
+.event__banner__container {
+  background-color: #F3F8FC;
+  border-radius: 20px !important; }

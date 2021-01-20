@@ -4,7 +4,9 @@
 
 // Colors brand
 $blue: #1B0E81;
+$clear_blue: #468DDE;
 $pink: #FA5A59;
+$gray: #F3F8FC;
 // Update Bulma's global variables
 $primary: $blue;
 $button-colors: mergeColorMaps(("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert, $primary-light, $primary-dark), "link": ($link, $link-invert, $link-light, $link-dark), "info": ($info, $info-invert, $info-light, $info-dark), "success": ($success, $success-invert, $success-light, $success-dark), "warning": ($warning, $warning-invert, $warning-light, $warning-dark), "danger": ($pink, $danger-invert, $danger-light, $danger-dark)), $custom-colors);
@@ -27,3 +29,31 @@ h1.heading{
   }
 }
 
+ 
+.event__image {
+  border-radius: 20px !important;
+}
+
+h1.event__name {
+  color: $blue !important;
+  font-weight: bold;
+}
+
+.event__info {
+  color: $clear_blue;
+}
+
+.event__dates {
+  color: $pink;
+  font-weight: bold;
+}
+
+.event__image__banner {
+  height: 250px !important;
+  width: 250px !important;
+}
+
+.event__banner__container {
+  background-color: $gray;
+  border-radius: 20px !important;
+}
