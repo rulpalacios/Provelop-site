@@ -7716,6 +7716,9 @@ h1.heading {
   h1.heading span {
     font-weight: bold; }
 
+.hero__image {
+  width: 800px; }
+
 .event__image {
   border-radius: 20px !important; }
 
@@ -7737,3 +7740,24 @@ h1.event__name {
 .event__banner__container {
   background-color: #F3F8FC;
   border-radius: 20px !important; }
+
+.event__card:hover {
+  cursor: pointer; }
+
+.event__details {
+  background-color: white; }
+  .event__details .event__dates {
+    font-size: 20px; }
+  .event__details .event__name {
+    font-size: 40px; }
+
+.hero.has-background {
+  position: relative;
+  overflow: hidden; }
+
+.hero-background {
+  border-radius: 20px 20px;
+  position: absolute;
+  object-fit: contain;
+  object-position: center center;
+  width: 100%; }

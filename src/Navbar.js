@@ -1,13 +1,14 @@
 import React from 'react'
 import LogoImage from './assets/logo.png'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => (
 <React.Fragment>
   <nav class="navbar is-transparent">
         <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
+        <Link class="navbar-item" to="/">
           <img src={LogoImage} alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28" />
-        </a>
+        </Link>
           <div class="navbar-burger" data-target="navbarExampleTransparentExample">
             <span></span>
             <span></span>

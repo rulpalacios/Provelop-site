@@ -29,6 +29,9 @@ h1.heading{
   }
 }
 
+.hero__image {
+  width: 800px;
+}
  
 .event__image {
   border-radius: 20px !important;
@@ -56,4 +59,32 @@ h1.event__name {
 .event__banner__container {
   background-color: $gray;
   border-radius: 20px !important;
+}
+
+.event__card:hover {
+  cursor: pointer;
+}
+.event__details {
+  background-color: white;
+
+  .event__dates {
+    font-size: 20px;
+  }
+  .event__name {
+    font-size: 40px;
+  }
+}
+.hero {
+  &.has-background {
+    position: relative;
+    overflow: hidden;
+  }
+  &-background {
+    border-radius: 20px 20px;
+    position: absolute;
+    object-fit: contain;
+    object-position: center center;
+    width: 100%;
+    // height: 100%;
+  }
 }

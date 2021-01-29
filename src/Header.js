@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImage from './assets/hero-img.jpg'
+import HeroImage from './assets/hero-img.png'
 
 function Header() {
   return (
@@ -16,7 +16,7 @@ function Header() {
               </div>
               <div className="level-item has-text-centered">
                 <div className="section-media">
-                  <img src={HeroImage} />
+                  <img src={HeroImage} className="hero__image"/>
                 </div>
               </div>
             </div>

@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useHistory } from 'react-router-dom'
+
 import Event1 from './assets/evento_1.jpg'
 import Event2 from './assets/evento_2.jpg'
 import Event3 from './assets/evento_3.jpg'
 import Event4 from './assets/evento_4.jpg'
 import Banner from './assets/banner.png'
 
-function Events() {
+const Events = (props) => {
+  const history = useHistory();
+
+  useEffect(() => {
+    document.body.style.backgroundColor = "#FFFFFF"
+  })
+  
   const events = [
     {
       name: 'React Native sin fronteras',
@@ -29,7 +37,10 @@ function Events() {
       <h1 className="my-6">Eventos populares</h1>
       <div class="columns is-mobile is-multiline">
         { events.map((event) => (
-          <div class="column is-one-quarter-desktop is-half-mobile is-half-tablet">
+          <div 
+            class="column event__card is-one-quarter-desktop is-half-mobile is-half-tablet"
+            onClick={() =>  history.push(`/courses/1`) }
+          >
             <div className="">
               <div className="card-image">
                 <figure className="image is-256x128">
@@ -80,7 +91,10 @@ function Events() {
         </div>
 
         { events.map((event) => (
-          <div class="column is-one-quarter-desktop is-half-mobile is-half-tablet">
+          <div 
+            class="column event__card is-one-quarter-desktop is-half-mobile is-half-tablet"
+            onClick={() =>  history.push(`/courses/1`) }
+          >
             <div className="">
               <div className="card-image">
                 <figure className="image is-256x128">
